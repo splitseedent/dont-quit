@@ -84,6 +84,15 @@ en: {
   clearBtn: "Clear demo data",
   sampleConfirm: "Replace what is on this device with clean presentation samples?",
   clearConfirm: "Clear all demo requests and counters from this device?",
+  liveQueueTitle: "Requests in the live inbox",
+  liveNote: "Live inbox: real requests sent to the ministry. Only the care account can see names and needs.",
+  careLoginTitle: "Care Team login",
+  careLoginBody: "We email a one-time login link to the ministry inbox. Only that inbox can open this view.",
+  careSendLink: "Email me a login link",
+  careLinkSent: "Login link sent. Open it from the ministry inbox on this device to enter.",
+  careLogout: "Sign out",
+  careRefresh: "Refresh",
+  careLoadErr: "Could not load requests. Check the connection, then tap Refresh.",
   cPrayers: "Prayers composed", cCounsel: "Counseling requests", cSos: "Don't Quit alerts",
   cStaff: "Staff requests", cCrisis: "Crisis flags",
   markDone: "Mark done", doneTag: "Done", staffTag: "STAFF", crisisTag: "CRISIS — FIRST",
@@ -157,6 +166,15 @@ es: {
   clearBtn: "Borrar datos de demostración",
   sampleConfirm: "¿Reemplazar lo que hay en este dispositivo con ejemplos limpios de presentación?",
   clearConfirm: "¿Borrar todas las solicitudes y contadores de demostración de este dispositivo?",
+  liveQueueTitle: "Solicitudes en la bandeja en vivo",
+  liveNote: "Bandeja en vivo: solicitudes reales enviadas al ministerio. Solo la cuenta de cuidado puede ver nombres y necesidades.",
+  careLoginTitle: "Acceso del equipo de cuidado",
+  careLoginBody: "Enviamos un enlace de acceso único al correo del ministerio. Solo ese correo puede abrir esta vista.",
+  careSendLink: "Enviarme el enlace",
+  careLinkSent: "Enlace enviado. Ábrelo desde el correo del ministerio en este dispositivo.",
+  careLogout: "Cerrar sesión",
+  careRefresh: "Actualizar",
+  careLoadErr: "No se pudieron cargar las solicitudes. Revisa la conexión y toca Actualizar.",
   cPrayers: "Oraciones preparadas", cCounsel: "Solicitudes al Pastor", cSos: "Alertas «No te rindas»",
   cStaff: "Solicitudes del personal", cCrisis: "Alertas de crisis",
   markDone: "Marcar hecho", doneTag: "Hecho", staffTag: "PERSONAL", crisisTag: "CRISIS — PRIMERO",
@@ -230,6 +248,15 @@ fr: {
   clearBtn: "Effacer les données démo",
   sampleConfirm: "Remplacer le contenu de cet appareil par des exemples propres ?",
   clearConfirm: "Effacer toutes les demandes et tous les compteurs de démonstration de cet appareil ?",
+  liveQueueTitle: "Demandes dans la boîte en direct",
+  liveNote: "Boîte en direct : vraies demandes envoyées au ministère. Seul le compte d'accompagnement peut voir les noms et les besoins.",
+  careLoginTitle: "Connexion de l'équipe",
+  careLoginBody: "Nous envoyons un lien de connexion unique à la boîte du ministère. Seule cette boîte peut ouvrir cette vue.",
+  careSendLink: "M'envoyer le lien",
+  careLinkSent: "Lien envoyé. Ouvrez-le depuis la boîte du ministère sur cet appareil.",
+  careLogout: "Se déconnecter",
+  careRefresh: "Actualiser",
+  careLoadErr: "Impossible de charger les demandes. Vérifiez la connexion, puis touchez Actualiser.",
   cPrayers: "Prières composées", cCounsel: "Demandes au Pasteur", cSos: "Alertes « N'abandonne pas »",
   cStaff: "Demandes du personnel", cCrisis: "Alertes de crise",
   markDone: "Marquer fait", doneTag: "Fait", staffTag: "PERSONNEL", crisisTag: "CRISE — EN PREMIER",
@@ -303,6 +330,15 @@ ht: {
   clearBtn: "Efase done demonstrasyon",
   sampleConfirm: "Ranplase sa ki sou aparèy sa a ak egzanp prezantasyon ki pwòp?",
   clearConfirm: "Efase tout demann ak kontè demonstrasyon ki sou aparèy sa a?",
+  liveQueueTitle: "Demann nan bwat an dirèk la",
+  liveNote: "Bwat an dirèk: vrè demann yo voye bay ministè a. Se sèl kont swen an ki ka wè non ak bezwen yo.",
+  careLoginTitle: "Koneksyon ekip swen",
+  careLoginBody: "Nou voye yon lyen koneksyon yon sèl fwa nan bwat ministè a. Se sèl bwat sa a ki ka louvri paj sa a.",
+  careSendLink: "Voye lyen an ban mwen",
+  careLinkSent: "Lyen an voye. Louvri l nan bwat ministè a sou aparèy sa a.",
+  careLogout: "Dekonekte",
+  careRefresh: "Aktyalize",
+  careLoadErr: "Nou pa t ka chaje demann yo. Tcheke koneksyon an, epi touche Aktyalize.",
   cPrayers: "Lapriyè ki konpoze", cCounsel: "Demann bay Pastè a", cSos: "Alèt « Pa lage »",
   cStaff: "Demann anplwaye", cCrisis: "Alèt kriz",
   markDone: "Make fini", doneTag: "Fini", staffTag: "ANPLWAYE", crisisTag: "KRIZ — AN PREMYE",
@@ -376,6 +412,15 @@ pt: {
   clearBtn: "Limpar dados de demonstração",
   sampleConfirm: "Substituir o que está neste aparelho por exemplos limpos de apresentação?",
   clearConfirm: "Limpar todos os pedidos e contadores de demonstração deste aparelho?",
+  liveQueueTitle: "Pedidos na caixa ao vivo",
+  liveNote: "Caixa ao vivo: pedidos reais enviados ao ministério. Só a conta de cuidado pode ver nomes e necessidades.",
+  careLoginTitle: "Acesso da equipe de cuidado",
+  careLoginBody: "Enviamos um link de acesso único para o e-mail do ministério. Só esse e-mail pode abrir esta página.",
+  careSendLink: "Enviar meu link",
+  careLinkSent: "Link enviado. Abra-o no e-mail do ministério neste aparelho.",
+  careLogout: "Sair",
+  careRefresh: "Atualizar",
+  careLoadErr: "Não foi possível carregar os pedidos. Verifique a conexão e toque em Atualizar.",
   cPrayers: "Orações compostas", cCounsel: "Pedidos ao Pastor", cSos: "Alertas «Não desista»",
   cStaff: "Pedidos da equipe", cCrisis: "Alertas de crise",
   markDone: "Marcar feito", doneTag: "Feito", staffTag: "EQUIPE", crisisTag: "CRISE — PRIMEIRO",
@@ -449,6 +494,15 @@ ar: {
   clearBtn: "مسح بيانات العرض",
   sampleConfirm: "استبدال ما على هذا الجهاز بنماذج عرض نظيفة؟",
   clearConfirm: "مسح كل طلبات وعدادات العرض من هذا الجهاز؟",
+  liveQueueTitle: "الطلبات في البريد المباشر",
+  liveNote: "البريد المباشر: طلبات حقيقية أُرسلت إلى الخدمة. حساب الرعاية فقط يمكنه رؤية الأسماء والاحتياجات.",
+  careLoginTitle: "دخول فريق الرعاية",
+  careLoginBody: "نرسل رابط دخول لمرة واحدة إلى بريد الخدمة. هذا البريد فقط يمكنه فتح هذه الصفحة.",
+  careSendLink: "أرسل رابط الدخول",
+  careLinkSent: "تم إرسال الرابط. افتحه من بريد الخدمة على هذا الجهاز.",
+  careLogout: "تسجيل الخروج",
+  careRefresh: "تحديث",
+  careLoadErr: "تعذر تحميل الطلبات. تحقق من الاتصال ثم اضغط تحديث.",
   cPrayers: "صلوات مُعدّة", cCounsel: "طلبات إلى الراعي", cSos: "تنبيهات «لا تستسلم»",
   cStaff: "طلبات الموظفين", cCrisis: "تنبيهات أزمة",
   markDone: "تم — إغلاق", doneTag: "تم", staffTag: "موظف", crisisTag: "أزمة — أولًا",
@@ -597,6 +651,59 @@ function composePrayer(name, rawNeed) {
 /* ---------------- State & storage ---------------- */
 const CARE_PIN = "4120"; // demo PIN — see README.md
 const LS = { lang: "dq_lang", queue: "dq_queue", counters: "dq_counters" };
+/* ---------------- Live backend (Supabase) ----------------
+   Fill DQ_CONFIG once the Supabase project exists (see live/LIVE_SETUP.md).
+   Empty config = local demo mode: everything stays on this device, the
+   Care Team opens with the demo PIN, and presentation tools are shown.
+   Live mode: the public (anon) key may only INSERT a request — Row Level
+   Security in the database does the guarding. Reading the inbox requires
+   the care account's emailed one-time login link. */
+const DQ_CONFIG = { supabaseUrl: "https://vscgolqarfgqfpgljlkm.supabase.co", supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZzY2dvbHFhcmZncWZwZ2xqbGttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM5MzY1MjAsImV4cCI6MjEwOTUxMjUyMH0.PpFmtgnCIFrIFPDotGoEUQzSg92nz0AKBt0ZfFfKvLQ", careEmail: "touchmysoulministry@gmail.com" };
+const LIVE = !!(DQ_CONFIG.supabaseUrl && DQ_CONFIG.supabaseAnonKey);
+const LS_SESSION = "dq_session";
+let remoteItems = null;
+
+function sbHeaders(token) {
+  return { "apikey": DQ_CONFIG.supabaseAnonKey,
+           "Authorization": "Bearer " + (token || DQ_CONFIG.supabaseAnonKey),
+           "Content-Type": "application/json" };
+}
+async function submitRemote(item) {
+  const res = await fetch(DQ_CONFIG.supabaseUrl + "/rest/v1/requests", {
+    method: "POST",
+    headers: Object.assign(sbHeaders(), { "Prefer": "return=minimal" }),
+    body: JSON.stringify({ type: item.type, barrier: item.barrier, need: item.need,
+      name: item.name, phone: item.phone, language: item.language,
+      staff: item.staff, crisis: item.crisis })
+  });
+  return res.ok;
+}
+async function deliver(item) {
+  if (LIVE) {
+    try { if (await submitRemote(item)) return; } catch (e) { /* fall through: save on this device */ }
+  }
+  const q = loadQueue(); q.push(item); saveQueue(q);
+}
+function getSession() {
+  try { const s = JSON.parse(localStorage.getItem(LS_SESSION));
+        if (s && s.access_token && s.exp > Date.now() / 1000) return s; } catch (e) {}
+  return null;
+}
+function setSession(s) {
+  if (s) localStorage.setItem(LS_SESSION, JSON.stringify(s));
+  else localStorage.removeItem(LS_SESSION);
+}
+function captureSessionFromHash() {
+  if (!location.hash || location.hash.indexOf("access_token") < 0) return;
+  const params = new URLSearchParams(location.hash.slice(1));
+  const tok = params.get("access_token");
+  const expIn = parseInt(params.get("expires_in") || "3600", 10);
+  if (tok) {
+    setSession({ access_token: tok, exp: Math.floor(Date.now() / 1000) + expIn });
+    history.replaceState(null, "", location.pathname + location.search);
+  }
+}
+
 let lang = localStorage.getItem(LS.lang) || null;
 let staffMode = sessionStorage.getItem("dq_staff") === "1";
 let selectedBarrier = null;
@@ -680,11 +787,7 @@ document.getElementById("staffToggle").addEventListener("click", () => {
   sessionStorage.setItem("dq_staff", staffMode ? "1" : "0");
   renderStaff();
 });
-document.getElementById("careLink").addEventListener("click", () => {
-  document.getElementById("careDash").hidden = true;
-  document.getElementById("pinForm").hidden = false;
-  show("care");
-});
+document.getElementById("careLink").addEventListener("click", openCare);
 
 /* ---------------- Talk to Pastor ---------------- */
 let voiceAudio = null;
@@ -751,10 +854,9 @@ document.getElementById("talkForm").addEventListener("submit", e => {
   document.getElementById("voiceNote").hidden = true;
   document.getElementById("prayerResult").hidden = false;
 
-  const q = loadQueue();
-  q.push({ id: Date.now(), type: "counseling", barrier: null, need: rawNeed, name, phone,
-           language: lang, staff: staffMode, crisis, done: false, ts: new Date().toISOString() });
-  saveQueue(q);
+  const item = { id: Date.now(), type: "counseling", barrier: null, need: rawNeed, name, phone,
+           language: lang, staff: staffMode, crisis, done: false, ts: new Date().toISOString() };
+  deliver(item);
   bump("counsel");
   if (staffMode) bump("staff");
   if (crisis) bump("crisis");
@@ -779,10 +881,9 @@ document.getElementById("sosForm").addEventListener("submit", e => {
   if (!selectedBarrier) return;
   const name = document.getElementById("sosName").value.replace(/\s+/g, " ").trim().slice(0, 40);
   const phone = document.getElementById("sosPhone").value.replace(/\s+/g, " ").trim().slice(0, 30);
-  const q = loadQueue();
-  q.push({ id: Date.now(), type: "sos", barrier: selectedBarrier, need: "", name, phone,
-           language: lang, staff: staffMode, crisis: false, done: false, ts: new Date().toISOString() });
-  saveQueue(q);
+  const item = { id: Date.now(), type: "sos", barrier: selectedBarrier, need: "", name, phone,
+           language: lang, staff: staffMode, crisis: false, done: false, ts: new Date().toISOString() };
+  deliver(item);
   bump("sos");
   if (staffMode) bump("staff");
   const v = dailyVerse();
@@ -803,16 +904,13 @@ document.getElementById("pinForm").addEventListener("submit", e => {
   document.getElementById("careDash").hidden = false;
   renderCare();
 });
-function renderCare() {
-  const c = loadCounters();
+function drawCare(q, c) {
   const rows = [
     [c.prayers, t("cPrayers")], [c.counsel, t("cCounsel")], [c.sos, t("cSos")],
     [c.staff, t("cStaff")], [c.crisis, t("cCrisis")]
   ];
   document.getElementById("counters").innerHTML = rows.map(r =>
     '<div class="counter"><strong>' + (r[0] || 0) + "</strong><span>" + r[1] + "</span></div>").join("");
-  const q = loadQueue().slice().sort((a, b) =>
-    (a.done - b.done) || ((b.crisis ? 1 : 0) - (a.crisis ? 1 : 0)) || (b.ts < a.ts ? -1 : 1));
   const list = document.getElementById("queueList");
   document.getElementById("queueEmpty").hidden = q.length > 0;
   list.innerHTML = "";
@@ -841,9 +939,11 @@ function renderCare() {
     div.innerHTML = html;
     list.appendChild(div);
   });
-  list.querySelectorAll("[data-done]").forEach(btn => btn.addEventListener("click", () => {
+  list.querySelectorAll("[data-done]").forEach(btn => btn.addEventListener("click", async () => {
+    const id = btn.getAttribute("data-done");
+    if (LIVE) { await markDoneRemote(id); return; }
     const queue = loadQueue();
-    const it = queue.find(x => String(x.id) === btn.getAttribute("data-done"));
+    const it = queue.find(x => String(x.id) === id);
     if (it) { it.done = true; saveQueue(queue); renderCare(); }
   }));
 }
@@ -851,6 +951,93 @@ function escapeHtml(s) {
   return String(s || "").replace(/[&<>"']/g, ch =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
 }
+function sortQueue(q) {
+  return q.slice().sort((a, b) =>
+    (a.done - b.done) || ((b.crisis ? 1 : 0) - (a.crisis ? 1 : 0)) || (b.ts < a.ts ? -1 : 1));
+}
+function renderCare() {
+  if (LIVE) { if (getSession()) renderRemote(); else openCare(); return; }
+  drawCare(sortQueue(loadQueue()), loadCounters());
+}
+function computeCounters(items) {
+  const c = { prayers: 0, counsel: 0, sos: 0, staff: 0, crisis: 0 };
+  items.forEach(it => {
+    if (it.type === "counseling") { c.prayers++; c.counsel++; }
+    if (it.type === "sos") c.sos++;
+    if (it.staff) c.staff++;
+    if (it.crisis) c.crisis++;
+  });
+  return c;
+}
+async function renderRemote() {
+  const s = getSession(); if (!s) { openCare(); return; }
+  try {
+    const res = await fetch(DQ_CONFIG.supabaseUrl +
+      "/rest/v1/requests?select=*&order=created_at.desc&limit=200",
+      { headers: sbHeaders(s.access_token) });
+    if (res.status === 401) { setSession(null); openCare(); return; }
+    if (!res.ok) throw new Error("load " + res.status);
+    const rows = await res.json();
+    remoteItems = rows.map(r => ({ id: r.id, type: r.type, barrier: r.barrier,
+      need: r.need, name: r.name, phone: r.phone, language: r.language,
+      staff: r.staff, crisis: r.crisis, done: r.done, ts: r.created_at }));
+    drawCare(sortQueue(remoteItems), computeCounters(remoteItems));
+  } catch (e) {
+    document.getElementById("queueList").innerHTML =
+      '<p class="form-err">' + escapeHtml(t("careLoadErr")) + "</p>";
+  }
+}
+async function markDoneRemote(id) {
+  const s = getSession(); if (!s) { openCare(); return; }
+  try {
+    const res = await fetch(DQ_CONFIG.supabaseUrl +
+      "/rest/v1/requests?id=eq." + encodeURIComponent(id), {
+        method: "PATCH",
+        headers: Object.assign(sbHeaders(s.access_token), { "Prefer": "return=minimal" }),
+        body: JSON.stringify({ done: true })
+      });
+    if (res.status === 401) { setSession(null); openCare(); return; }
+  } catch (e) { /* leave the item as-is; Refresh shows the truth */ }
+  renderRemote();
+}
+function openCare() {
+  show("care");
+  if (!LIVE) {
+    document.getElementById("liveLogin").hidden = true;
+    document.getElementById("careDash").hidden = true;
+    document.getElementById("pinForm").hidden = false;
+    return;
+  }
+  document.getElementById("pinForm").hidden = true;
+  const s = getSession();
+  document.getElementById("liveLogin").hidden = !!s;
+  document.getElementById("careDash").hidden = !s;
+  if (s) {
+    document.getElementById("careDemoNote").hidden = true;
+    document.getElementById("presTools").hidden = true;
+    document.getElementById("liveNote").hidden = false;
+    document.getElementById("liveActions").hidden = false;
+    document.getElementById("queueTitle").textContent = t("liveQueueTitle");
+    renderRemote();
+  }
+}
+document.getElementById("sendLinkBtn").addEventListener("click", async () => {
+  const note = document.getElementById("linkNote");
+  try {
+    const res = await fetch(DQ_CONFIG.supabaseUrl + "/auth/v1/otp", {
+      method: "POST", headers: sbHeaders(),
+      body: JSON.stringify({ email: DQ_CONFIG.careEmail, create_user: false,
+        options: { emailRedirectTo: "https://splitseedent.github.io/dont-quit/" } })
+    });
+    if (!res.ok) throw new Error("otp " + res.status);
+    note.textContent = t("careLinkSent");
+  } catch (e) {
+    note.textContent = t("careLoadErr");
+  }
+  note.hidden = false;
+});
+document.getElementById("refreshBtn").addEventListener("click", () => renderRemote());
+document.getElementById("logoutBtn").addEventListener("click", () => { setSession(null); openCare(); });
 document.getElementById("sampleBtn").addEventListener("click", () => {
   if (!window.confirm(t("sampleConfirm"))) return;
   const baseTs = Date.now();
@@ -882,7 +1069,9 @@ document.getElementById("clearBtn").addEventListener("click", () => {
   renderCare();
 });
 document.getElementById("exportBtn").addEventListener("click", () => {
-  const payload = { exportedAt: new Date().toISOString(), counters: loadCounters(), queue: loadQueue() };
+  const payload = (LIVE && remoteItems)
+    ? { exportedAt: new Date().toISOString(), counters: computeCounters(remoteItems), queue: remoteItems }
+    : { exportedAt: new Date().toISOString(), counters: loadCounters(), queue: loadQueue() };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -892,5 +1081,6 @@ document.getElementById("exportBtn").addEventListener("click", () => {
 });
 
 /* ---------------- Boot ---------------- */
+captureSessionFromHash();
 if (lang && I18N[lang]) { applyLang(); show("home"); }
 else { lang = "en"; show("lang"); }

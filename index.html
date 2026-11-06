@@ -164,9 +164,16 @@
       <button type="submit" class="primary-btn"><span data-i18n="careEnter">Enter</span></button>
     </form>
 
+    <div id="liveLogin" class="card" hidden>
+      <h2 data-i18n="careLoginTitle">Care Team login</h2>
+      <p class="fine" data-i18n="careLoginBody">We email a one-time login link to the ministry inbox. Only that inbox can open this view.</p>
+      <button type="button" class="primary-btn" id="sendLinkBtn"><span data-i18n="careSendLink">Email me a login link</span></button>
+      <p id="linkNote" class="fine" hidden></p>
+    </div>
+
     <div id="careDash" hidden>
-      <p class="fine demo-note" data-i18n="careDemo">Demo note: everything here is stored on THIS device only. In the live version, requests go to Pastor's phone in real time.</p>
-      <div class="presentation-tools">
+      <p class="fine demo-note" id="careDemoNote" data-i18n="careDemo">Demo note: everything here is stored on THIS device only. In the live version, requests go to Pastor's phone in real time.</p>
+      <div class="presentation-tools" id="presTools">
         <h2 data-i18n="presentationTitle">Presentation tools</h2>
         <p class="fine" data-i18n="presentationNote">For a walk-through: load clean sample requests, or clear this device before you present.</p>
         <div class="tool-actions">
@@ -174,11 +181,16 @@
           <button type="button" class="ghost-btn danger" id="clearBtn"><span data-i18n="clearBtn">Clear demo data</span></button>
         </div>
       </div>
+      <p class="fine demo-note" id="liveNote" hidden><span data-i18n="liveNote">Live inbox: real requests sent to the ministry. Only the care account can see names and needs.</span></p>
       <div class="counters" id="counters"></div>
-      <h2 class="queue-title" data-i18n="queueTitle">Requests on this device</h2>
+      <h2 class="queue-title" id="queueTitle" data-i18n="queueTitle">Requests on this device</h2>
       <div id="queueList"></div>
       <p id="queueEmpty" class="fine" hidden><span data-i18n="queueEmpty">No requests yet on this device.</span></p>
       <button type="button" class="ghost-btn" id="exportBtn"><span data-i18n="exportBtn">Export queue (JSON)</span></button>
+      <div class="tool-actions" id="liveActions" hidden>
+        <button type="button" class="ghost-btn" id="refreshBtn"><span data-i18n="careRefresh">Refresh</span></button>
+        <button type="button" class="ghost-btn danger" id="logoutBtn"><span data-i18n="careLogout">Sign out</span></button>
+      </div>
     </div>
   </section>
 

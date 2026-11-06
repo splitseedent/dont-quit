@@ -1,4 +1,6 @@
-# Don't Quit — presentation demo
+# Don't Quit — live pilot
 
-Static demo of the Don't Quit care companion (Touch My Soul Ministry).
-Requests entered in this demo stay on the visitor's own device.
+The Don't Quit care companion (Touch My Soul Ministry), live pilot.
+Requests go to a private ministry inbox. Only the ministry care account can read them.
+
+Live at: https://splitseedent.github.io/dont-quit/
