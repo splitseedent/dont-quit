@@ -40,9 +40,11 @@ body {
 }
 .brand { display: flex; gap: 12px; align-items: flex-start; flex: 1; min-width: 0; }
 .brand-mark {
-  font-size: 26px; color: var(--gold); line-height: 1.1;
-  background: var(--purple); border-radius: 12px; padding: 8px 11px;
+  flex: none; width: 52px; height: 52px; border-radius: 12px; overflow: hidden;
+  background: var(--purple);
 }
+.brand-mark img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.lang-logo { display: block; width: 230px; max-width: 70vw; margin: 10px auto 4px; border-radius: 18px; }
 .brand-text strong {
   display: block; font-size: 22px; letter-spacing: 0.06em; color: var(--purple);
 }
