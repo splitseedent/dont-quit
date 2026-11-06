@@ -1043,10 +1043,10 @@ function openCare() {
 document.getElementById("sendLinkBtn").addEventListener("click", async () => {
   const note = document.getElementById("linkNote");
   try {
-    const res = await fetch(DQ_CONFIG.supabaseUrl + "/auth/v1/otp", {
+    const res = await fetch(DQ_CONFIG.supabaseUrl + "/auth/v1/otp?redirect_to=" +
+      encodeURIComponent("https://splitseedent.github.io/dont-quit/"), {
       method: "POST", headers: sbHeaders(),
-      body: JSON.stringify({ email: DQ_CONFIG.careEmail, create_user: false,
-        options: { emailRedirectTo: "https://splitseedent.github.io/dont-quit/" } })
+      body: JSON.stringify({ email: DQ_CONFIG.careEmail, create_user: false })
     });
     if (!res.ok) throw new Error("otp " + res.status);
     note.textContent = t("careLinkSent");
