@@ -658,7 +658,7 @@ const LS = { lang: "dq_lang", queue: "dq_queue", counters: "dq_counters" };
    Live mode: the public (anon) key may only INSERT a request — Row Level
    Security in the database does the guarding. Reading the inbox requires
    the care account's emailed one-time login link. */
-const DQ_CONFIG = { supabaseUrl: "https://vscgolqarfgqfpgljlkm.supabase.co", supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZzY2dvbHFhcmZncWZwZ2xqbGttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM5MzY1MjAsImV4cCI6MjEwOTUxMjUyMH0.PpFmtgnCIFrIFPDotGoEUQzSg92nz0AKBt0ZfFfKvLQ", careEmail: "touchmysoulministry@gmail.com" };
+const DQ_CONFIG = { supabaseUrl: "https://vscgolqarfgqfpgljlkm.supabase.co", supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZzY2dvbHFhcmZncWZwZ2xqbGttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM5MzY1MjAsImV4cCI6MjEwOTUxMjUyMH0.PpFmtgnCIFrIFPDotGoEUQzSg92nz0AKBt0ZfFfKvLQ", careEmail: "touchmysoulministry@gmail.com", alertUrl: "https://formsubmit.co/ajax/touchmysoulministry@gmail.com" };
 const LIVE = !!(DQ_CONFIG.supabaseUrl && DQ_CONFIG.supabaseAnonKey);
 const LS_SESSION = "dq_session";
 let remoteItems = null;
@@ -680,9 +680,30 @@ async function submitRemote(item) {
 }
 async function deliver(item) {
   if (LIVE) {
-    try { if (await submitRemote(item)) return; } catch (e) { /* fall through: save on this device */ }
+    try { if (await submitRemote(item)) { await sendEmailAlert(item); return; } } catch (e) { /* fall through: save on this device */ }
   }
   const q = loadQueue(); q.push(item); saveQueue(q);
+}
+
+// Content-free alert to the ministry inbox: kind and flags only. The student's
+// name, words, and phone number NEVER travel by email; they stay in the inbox.
+async function sendEmailAlert(item) {
+  if (!DQ_CONFIG.alertUrl) return;
+  const kind = item.type === "sos" ? "SOS request" + (item.barrier ? " (" + item.barrier + ")" : "") : "Prayer / counseling request";
+  try {
+    await fetch(DQ_CONFIG.alertUrl, {
+      method: "POST", keepalive: true,
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        _subject: (item.crisis ? "URGENT - Crisis flag - " : "") + "Don't Quit: new " + kind,
+        _template: "table", _captcha: "false",
+        alert: "A new request just arrived in the Don't Quit inbox.",
+        kind, barrier: item.barrier || "-", staff: item.staff ? "yes" : "no",
+        crisis: item.crisis ? "YES" : "no", language: item.language || "en",
+        note: "Details stay private in the inbox. Open Don't Quit, tap Care Team, and sign in with the emailed link to read it."
+      })
+    });
+  } catch { /* an alert must never block a student's request */ }
 }
 function getSession() {
   try { const s = JSON.parse(localStorage.getItem(LS_SESSION));
