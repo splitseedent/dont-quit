@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Don't Quit — Touch My Soul Ministry</title>
+<meta name="description" content="A 24/7 care companion for Wayne Township Adult Education students and staff, offered by Touch My Soul Ministry." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">✝</div>
+    <div class="brand-text">
+      <strong>DON'T QUIT</strong>
+      <span data-i18n="tagline">Your pastor and your people, one tap away — so you finish what you started.</span>
+    </div>
+  </div>
+  <button id="globeBtn" class="globe" type="button" aria-label="Change language" title="Language">🌐</button>
+</header>
+
+<main id="app">
+
+  <!-- ============ LANGUAGE PICKER ============ -->
+  <section id="screen-lang" class="screen">
+    <h1 class="lang-title" data-i18n="chooseLang">Choose your language</h1>
+    <div class="lang-grid">
+      <button type="button" class="lang-btn" data-lang="en">English</button>
+      <button type="button" class="lang-btn" data-lang="es">Español</button>
+      <button type="button" class="lang-btn" data-lang="fr">Français</button>
+      <button type="button" class="lang-btn" data-lang="ht">Kreyòl</button>
+      <button type="button" class="lang-btn" data-lang="pt">Português</button>
+      <button type="button" class="lang-btn" data-lang="ar">العربية</button>
+    </div>
+    <p class="lang-note">Touch My Soul Ministry</p>
+  </section>
+
+  <!-- ============ HOME ============ -->
+  <section id="screen-home" class="screen" hidden>
+    <div id="staffBanner" class="staff-banner" hidden><span data-i18n="staffOn">Staff door — your request will be marked as staff.</span></div>
+
+    <button type="button" class="door door-talk" id="doorTalk">
+      <span class="door-icon" aria-hidden="true">🙏</span>
+      <span class="door-body">
+        <span class="door-title" data-i18n="talk">Talk to Pastor</span>
+        <span class="door-sub" data-i18n="talkSub">Share what you're carrying. Hear a prayer in Pastor's voice, and he will follow up with you himself.</span>
+      </span>
+    </button>
+
+    <button type="button" class="door door-dq" id="doorDq">
+      <span class="door-icon" aria-hidden="true">💪</span>
+      <span class="door-body">
+        <span class="door-title" data-i18n="dq">Don't Quit</span>
+        <span class="door-sub" data-i18n="dqSub">Something about to stop you from finishing? Tell us what it is. We will help you face it.</span>
+      </span>
+    </button>
+
+    <div class="daily card">
+      <h2 data-i18n="dailyWord">Today's word</h2>
+      <blockquote>
+        <p id="dailyText"></p>
+        <cite id="dailyRef"></cite>
+      </blockquote>
+    </div>
+
+    <button type="button" class="staff-link" id="staffToggle"><span data-i18n="forStaff">For staff</span></button>
+
+    <footer class="site-footer">
+      <p data-i18n="offeredBy">Offered by Touch My Soul Ministry for students and staff of Wayne Township Adult Education.</p>
+      <p data-i18n="serviceLine">Touch My Soul Ministry · Sundays 11:30 AM · Whisper Theater, Garnet Waterfront Hotel</p>
+      <p class="crisis-line" data-i18n="crisisFooter">In crisis? Call or text 988 — free, day or night (US).</p>
+      <p><button type="button" class="care-link" id="careLink"><span data-i18n="careLink">Care Team</span></button></p>
+    </footer>
+  </section>
+
+  <!-- ============ TALK TO PASTOR ============ -->
+  <section id="screen-talk" class="screen" hidden>
+    <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+    <h1 class="screen-title" data-i18n="talk">Talk to Pastor</h1>
+
+    <div id="crisisPanel" class="crisis-panel" hidden>
+      <h2 data-i18n="crisisTitle">You matter. Please reach out right now.</h2>
+      <p data-i18n="crisisBody">If you may act on these thoughts, please call or text 988 right now — free, private, day or night. Trained counselors in the US will listen and help. Your request has also been saved, and Pastor will follow up.</p>
+      <div class="crisis-actions">
+        <a class="crisis-btn" href="tel:988"><span data-i18n="crisisCall">📞 Call 988</span></a>
+        <a class="crisis-btn" href="sms:988"><span data-i18n="crisisText">💬 Text 988</span></a>
+      </div>
+    </div>
+
+    <form id="talkForm" novalidate>
+      <label class="field-label" for="needInput"><span data-i18n="carrying">What are you carrying?</span></label>
+      <textarea id="needInput" rows="4" data-i18n-ph="carryingPh" placeholder="Write it in your own words. One honest line is enough."></textarea>
+      <p id="needErr" class="form-err" hidden><span data-i18n="needErr">Please write a few words about what you're carrying, so we can pray with you.</span></p>
+      <label class="field-label" for="talkName"><span data-i18n="nameOpt">Your name (optional)</span></label>
+      <input type="text" id="talkName" autocomplete="name" />
+      <label class="field-label" for="talkPhone"><span data-i18n="phoneOpt">Phone (optional)</span></label>
+      <input type="tel" id="talkPhone" autocomplete="tel" />
+      <p class="fine" data-i18n="reachNote">Only share your phone if you want Pastor to reach you. Pastor reads every request himself and replies personally within one business day.</p>
+      <button type="submit" class="primary-btn" id="prayBtn"><span data-i18n="prayBtn">Pray with me</span></button>
+    </form>
+
+    <div id="prayerResult" class="card prayer-card" hidden>
+      <h2 data-i18n="prayerFor">A prayer for you</h2>
+      <p id="prayerText" class="prayer-text"></p>
+      <blockquote class="scripture">
+        <p id="prayerVerse"></p>
+        <cite id="prayerRef"></cite>
+      </blockquote>
+      <button type="button" class="voice-btn" id="voiceBtn"><span data-i18n="hearVoice">🔊 Hear it in Pastor's voice</span></button>
+      <p id="voiceNote" class="fine" hidden></p>
+      <p id="savedNote" class="saved-note" hidden><span data-i18n="savedCounsel">Your request is saved. Pastor will reach out to you himself.</span></p>
+      <button type="button" class="ghost-btn" data-back><span data-i18n="againBtn">Back to the start</span></button>
+    </div>
+  </section>
+
+  <!-- ============ DON'T QUIT (SOS) ============ -->
+  <section id="screen-sos" class="screen" hidden>
+    <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+    <h1 class="screen-title" data-i18n="dqQ">What is about to stop you?</h1>
+    <p class="screen-sub" data-i18n="dqPick">Tap the one that fits best. There is no wrong answer.</p>
+
+    <div class="barrier-grid" id="barrierGrid">
+      <button type="button" class="barrier" data-barrier="childcare"><span class="b-icon">👶</span><span data-i18n="b_childcare">Childcare</span></button>
+      <button type="button" class="barrier" data-barrier="ride"><span class="b-icon">🚌</span><span data-i18n="b_ride">A ride</span></button>
+      <button type="button" class="barrier" data-barrier="money"><span class="b-icon">💵</span><span data-i18n="b_money">Money</span></button>
+      <button type="button" class="barrier" data-barrier="work"><span class="b-icon">🕐</span><span data-i18n="b_work">My work schedule</span></button>
+      <button type="button" class="barrier" data-barrier="family"><span class="b-icon">🏠</span><span data-i18n="b_family">Family</span></button>
+      <button type="button" class="barrier" data-barrier="behind"><span class="b-icon">📚</span><span data-i18n="b_behind">I'm falling behind</span></button>
+      <button type="button" class="barrier wide" data-barrier="talk"><span class="b-icon">💬</span><span data-i18n="b_talk">I just need to talk</span></button>
+    </div>
+
+    <form id="sosForm" class="card" hidden>
+      <p id="sosResponse" class="sos-response"></p>
+      <p id="sosNext" class="sos-next"></p>
+      <label class="field-label" for="sosName"><span data-i18n="nameOpt">Your name (optional)</span></label>
+      <input type="text" id="sosName" autocomplete="name" />
+      <label class="field-label" for="sosPhone"><span data-i18n="phoneOpt">Phone (optional)</span></label>
+      <input type="tel" id="sosPhone" autocomplete="tel" />
+      <p class="fine" data-i18n="sosReach">Only share your phone so the care team can reach you. Someone will reach out as soon as we can.</p>
+      <button type="submit" class="primary-btn"><span data-i18n="sosSend">Send — I need help</span></button>
+    </form>
+
+    <div id="sosConfirm" class="card confirm-card" hidden>
+      <h2 data-i18n="sosConfirmTitle">We got it. Don't quit.</h2>
+      <p data-i18n="sosConfirmBody">Your message is with Pastor's care team now. Someone will reach out. Until then, hold on to this:</p>
+      <blockquote class="scripture">
+        <p id="sosVerse"></p>
+        <cite id="sosRef"></cite>
+      </blockquote>
+      <button type="button" class="ghost-btn" data-back><span data-i18n="againBtn">Back to the start</span></button>
+    </div>
+  </section>
+
+  <!-- ============ CARE VIEW ============ -->
+  <section id="screen-care" class="screen" hidden>
+    <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+    <h1 class="screen-title" data-i18n="carePinTitle">Care Team</h1>
+
+    <form id="pinForm" class="card">
+      <label class="field-label" for="pinInput"><span data-i18n="carePinPrompt">Enter the care team PIN.</span></label>
+      <input type="password" id="pinInput" inputmode="numeric" autocomplete="off" maxlength="8" />
+      <p id="pinErr" class="form-err" hidden><span data-i18n="careWrong">That PIN doesn't match. Try again.</span></p>
+      <button type="submit" class="primary-btn"><span data-i18n="careEnter">Enter</span></button>
+    </form>
+
+    <div id="careDash" hidden>
+      <p class="fine demo-note" data-i18n="careDemo">Demo note: everything here is stored on THIS device only. In the live version, requests go to Pastor's phone in real time.</p>
+      <div class="presentation-tools">
+        <h2 data-i18n="presentationTitle">Presentation tools</h2>
+        <p class="fine" data-i18n="presentationNote">For a walk-through: load clean sample requests, or clear this device before you present.</p>
+        <div class="tool-actions">
+          <button type="button" class="ghost-btn" id="sampleBtn"><span data-i18n="sampleBtn">Load presentation samples</span></button>
+          <button type="button" class="ghost-btn danger" id="clearBtn"><span data-i18n="clearBtn">Clear demo data</span></button>
+        </div>
+      </div>
+      <div class="counters" id="counters"></div>
+      <h2 class="queue-title" data-i18n="queueTitle">Requests on this device</h2>
+      <div id="queueList"></div>
+      <p id="queueEmpty" class="fine" hidden><span data-i18n="queueEmpty">No requests yet on this device.</span></p>
+      <button type="button" class="ghost-btn" id="exportBtn"><span data-i18n="exportBtn">Export queue (JSON)</span></button>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
