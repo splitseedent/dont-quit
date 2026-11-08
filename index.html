@@ -97,7 +97,7 @@
       <p id="needErr" class="form-err" hidden><span data-i18n="needErr">Please write a few words about what you're carrying, so we can pray with you.</span></p>
       <label class="field-label" for="talkName"><span data-i18n="nameOpt">Your name (optional)</span></label>
       <input type="text" id="talkName" autocomplete="name" />
-      <label class="field-label" for="talkPhone"><span data-i18n="phoneOpt">Phone (optional)</span></label>
+      <label class="field-label" for="talkPhone"><span data-i18n="phoneOpt">Phone</span></label>
       <input type="tel" id="talkPhone" autocomplete="tel" />
       <p class="fine" data-i18n="reachNote">Only share your phone if you want Pastor to reach you. Pastor reads every request himself and replies personally within one business day.</p>
       <button type="submit" class="primary-btn" id="prayBtn"><span data-i18n="prayBtn">Pray with me</span></button>
@@ -112,6 +112,13 @@
       </blockquote>
       <button type="button" class="voice-btn" id="voiceBtn"><span data-i18n="hearVoice">🔊 Hear it in Pastor's voice</span></button>
       <p id="voiceNote" class="fine" hidden></p>
+      <div id="sendBlock" hidden>
+        <p class="fine" data-i18n="sendNote">Want Pastor to reach out to you himself? Add your phone number and tap Send — he can only respond if you leave a number. Your prayer above is yours either way.</p>
+        <label class="field-label" for="resultPhone"><span data-i18n="phoneOpt">Phone</span></label>
+        <input type="tel" id="resultPhone" autocomplete="tel" />
+        <p id="resultPhoneErr" class="form-err" hidden><span data-i18n="phoneErr">Please add your phone number — Pastor can only respond if you leave a number he can reach.</span></p>
+        <button type="button" class="primary-btn" id="sendReqBtn"><span data-i18n="sendBtn">Send to Pastor</span></button>
+      </div>
       <p id="savedNote" class="saved-note" hidden><span data-i18n="savedCounsel">Your request is saved. Pastor will reach out to you himself.</span></p>
       <button type="button" class="ghost-btn" data-back><span data-i18n="againBtn">Back to the start</span></button>
     </div>
@@ -138,8 +145,9 @@
       <p id="sosNext" class="sos-next"></p>
       <label class="field-label" for="sosName"><span data-i18n="nameOpt">Your name (optional)</span></label>
       <input type="text" id="sosName" autocomplete="name" />
-      <label class="field-label" for="sosPhone"><span data-i18n="phoneOpt">Phone (optional)</span></label>
+      <label class="field-label" for="sosPhone"><span data-i18n="phoneOpt">Phone</span></label>
       <input type="tel" id="sosPhone" autocomplete="tel" />
+      <p id="sosPhoneErr" class="form-err" hidden><span data-i18n="phoneErr">Please add your phone number — Pastor can only respond if you leave a number he can reach.</span></p>
       <p class="fine" data-i18n="sosReach">Only share your phone so the care team can reach you. Someone will reach out as soon as we can.</p>
       <button type="submit" class="primary-btn"><span data-i18n="sosSend">Send — I need help</span></button>
     </form>

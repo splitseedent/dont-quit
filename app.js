@@ -34,10 +34,13 @@ en: {
   carrying: "What are you carrying?",
   carryingPh: "Write it in your own words. One honest line is enough.",
   nameOpt: "Your name (optional)",
-  phoneOpt: "Phone (optional)",
-  reachNote: "Only share your phone if you want Pastor to reach you. Pastor reads every request himself and replies personally within one business day.",
+  phoneOpt: "Phone",
+  reachNote: "Your prayer is always free — no number needed to pray. But if you want Pastor to reach back to you, leave your phone number: he can only respond if you do. Pastor reads every request himself and replies personally within one business day.",
   prayBtn: "Pray with me",
   needErr: "Please write a few words about what you're carrying, so we can pray with you.",
+  phoneErr: "Please add your phone number — Pastor can only respond if you leave a number he can reach.",
+  sendNote: "Want Pastor to reach out to you himself? Add your phone number and tap Send — he can only respond if you leave a number. Your prayer above is yours either way.",
+  sendBtn: "Send to Pastor",
   prayerFor: "A prayer for you",
   hearVoice: "🔊 Hear it in Pastor's voice",
   voiceWait: "Loading Pastor's voice…",
@@ -64,8 +67,8 @@ en: {
   r_behind: "Falling behind is not the same as failing. Most finishers felt behind at some point — they just did not stop there.",
   n_behind: "Tell us which class or subject. We will help you form a simple plan to catch up, and cheer you on while you work it.",
   r_talk: "Sometimes the bravest step is saying, “I just need to talk.” You just took it.",
-  n_talk: "Share your name and phone if you can. Pastor or a care team member will reach out to listen — not to judge.",
-  sosReach: "Only share your phone so the care team can reach you. Someone will reach out as soon as we can.",
+  n_talk: "Share your name and phone so we can reach you. Pastor or a care team member will reach out to listen — not to judge.",
+  sosReach: "Your phone number is required here — it is the only way the care team can reach you back. Someone will reach out as soon as we can.",
   sosSend: "Send — I need help",
   sosConfirmTitle: "We got it. Don't quit.",
   sosConfirmBody: "Your message is with Pastor's care team now. Someone will reach out. Until then, hold on to this:",
@@ -116,10 +119,13 @@ es: {
   carrying: "¿Qué llevas en el corazón?",
   carryingPh: "Escríbelo con tus palabras. Una línea sincera es suficiente.",
   nameOpt: "Tu nombre (opcional)",
-  phoneOpt: "Teléfono (opcional)",
-  reachNote: "Comparte tu teléfono solo si quieres que el Pastor te contacte. El Pastor lee cada solicitud personalmente y responde en un día laborable.",
+  phoneOpt: "Teléfono",
+  reachNote: "Tu oración siempre es gratuita: no necesitas un número para orar. Pero si quieres que el Pastor te responda, deja tu número de teléfono: solo puede responder si lo dejas. El Pastor lee cada solicitud personalmente y responde en un día laborable.",
   prayBtn: "Ora conmigo",
   needErr: "Escribe unas palabras sobre lo que llevas, para que podamos orar contigo.",
+  phoneErr: "Agrega tu número de teléfono: el Pastor solo puede responder si dejas un número donde localizarte.",
+  sendNote: "¿Quieres que el Pastor se comunique contigo personalmente? Agrega tu número de teléfono y toca Enviar: solo puede responder si dejas un número. Tu oración de arriba es tuya de todos modos.",
+  sendBtn: "Enviar al Pastor",
   prayerFor: "Una oración para ti",
   hearVoice: "🔊 Escúchala en la voz del Pastor",
   voiceWait: "Cargando la voz del Pastor…",
@@ -146,8 +152,8 @@ es: {
   r_behind: "Ir atrasado no es lo mismo que fracasar. La mayoría de los que terminan se sintieron atrasados alguna vez; simplemente no se detuvieron.",
   n_behind: "Cuéntanos qué clase o materia es. Te ayudaremos a hacer un plan sencillo para ponerte al día.",
   r_talk: "A veces el paso más valiente es decir: «Solo necesito hablar». Acabas de darlo.",
-  n_talk: "Comparte tu nombre y teléfono si puedes. El Pastor o alguien del equipo te contactará para escucharte, sin juzgarte.",
-  sosReach: "Comparte tu teléfono solo para que el equipo pueda contactarte. Alguien se comunicará contigo lo antes posible.",
+  n_talk: "Comparte tu nombre y teléfono para que podamos contactarte. El Pastor o alguien del equipo te contactará para escucharte, sin juzgarte.",
+  sosReach: "Tu número de teléfono es obligatorio aquí: es la única manera en que el equipo puede responderte. Alguien se comunicará contigo lo antes posible.",
   sosSend: "Enviar — necesito ayuda",
   sosConfirmTitle: "Lo recibimos. No te rindas.",
   sosConfirmBody: "Tu mensaje ya está con el equipo de cuidado del Pastor. Alguien se comunicará contigo. Mientras tanto, guarda esto en tu corazón:",
@@ -198,10 +204,13 @@ fr: {
   carrying: "Qu'est-ce que vous portez ?",
   carryingPh: "Écrivez-le avec vos mots. Une phrase honnête suffit.",
   nameOpt: "Votre nom (facultatif)",
-  phoneOpt: "Téléphone (facultatif)",
-  reachNote: "Partagez votre numéro seulement si vous voulez que le Pasteur vous contacte. Le Pasteur lit chaque demande lui-même et répond personnellement sous un jour ouvrable.",
+  phoneOpt: "Téléphone",
+  reachNote: "Votre prière est toujours gratuite — aucun numéro n'est nécessaire pour prier. Mais si vous voulez que le Pasteur vous réponde, laissez votre numéro : il ne peut répondre que si vous le laissez. Le Pasteur lit chaque demande lui-même et répond personnellement sous un jour ouvrable.",
   prayBtn: "Priez avec moi",
   needErr: "Écrivez quelques mots sur ce que vous portez, pour que nous puissions prier avec vous.",
+  phoneErr: "Ajoutez votre numéro de téléphone — le Pasteur ne peut répondre que si vous laissez un numéro où vous joindre.",
+  sendNote: "Vous voulez que le Pasteur vous contacte lui-même ? Ajoutez votre numéro et touchez Envoyer — il ne peut répondre que si vous laissez un numéro. Votre prière ci-dessus est à vous dans tous les cas.",
+  sendBtn: "Envoyer au Pasteur",
   prayerFor: "Une prière pour vous",
   hearVoice: "🔊 Écouter dans la voix du Pasteur",
   voiceWait: "Chargement de la voix du Pasteur…",
@@ -228,8 +237,8 @@ fr: {
   r_behind: "Être en retard n'est pas échouer. La plupart de ceux qui finissent se sont sentis en retard un jour — ils ne se sont simplement pas arrêtés.",
   n_behind: "Dites-nous la classe ou la matière. Nous vous aiderons à faire un plan simple pour rattraper.",
   r_talk: "Parfois, l'étape la plus courageuse est de dire : « J'ai juste besoin de parler. » Vous venez de la franchir.",
-  n_talk: "Partagez votre nom et votre numéro si vous pouvez. Le Pasteur ou un membre de l'équipe vous contactera pour écouter — sans juger.",
-  sosReach: "Partagez votre numéro seulement pour que l'équipe puisse vous joindre. Quelqu'un vous contactera dès que possible.",
+  n_talk: "Partagez votre nom et votre numéro pour que nous puissions vous joindre. Le Pasteur ou un membre de l'équipe vous contactera pour écouter — sans juger.",
+  sosReach: "Votre numéro est obligatoire ici — c'est le seul moyen pour l'équipe de vous recontacter. Quelqu'un vous contactera dès que possible.",
   sosSend: "Envoyer — j'ai besoin d'aide",
   sosConfirmTitle: "Bien reçu. N'abandonne pas.",
   sosConfirmBody: "Votre message est maintenant entre les mains de l'équipe du Pasteur. Quelqu'un vous contactera. En attendant, gardez ceci dans votre cœur :",
@@ -280,10 +289,13 @@ ht: {
   carrying: "Kisa w ap pote?",
   carryingPh: "Ekri l ak pwòp mo w. Yon sèl fraz onèt sifi.",
   nameOpt: "Non w (si w vle)",
-  phoneOpt: "Telefòn (si w vle)",
-  reachNote: "Pataje telefòn ou sèlman si w vle Pastè a kontakte w. Pastè a li chak demann li menm, epi li reponn an pèsòn nan yon jou travay.",
+  phoneOpt: "Telefòn",
+  reachNote: "Lapriyè w toujou gratis — ou pa bezwen nimewo pou w priye. Men si w vle Pastè a kontakte w, kite nimewo telefòn ou: li ka reponn sèlman si w kite l. Pastè a li chak demann li menm, epi li reponn an pèsòn nan yon jou travay.",
   prayBtn: "Priye ak mwen",
   needErr: "Tanpri ekri kèk mo sou sa w ap pote a, pou nou ka priye ak ou.",
+  phoneErr: "Tanpri ajoute nimewo telefòn ou — Pastè a ka reponn sèlman si w kite yon nimewo li ka jwenn ou.",
+  sendNote: "Ou vle Pastè a kontakte w li menm? Ajoute nimewo telefòn ou epi touche Voye — li ka reponn sèlman si w kite yon nimewo. Lapriyè w la anwo a se pou ou kanmenm.",
+  sendBtn: "Voye bay Pastè a",
   prayerFor: "Yon lapriyè pou ou",
   hearVoice: "🔊 Koute l nan vwa Pastè a",
   voiceWait: "N ap chaje vwa Pastè a…",
@@ -310,8 +322,8 @@ ht: {
   r_behind: "Pran reta se pa menm bagay ak echwe. Pifò moun ki fini te santi yo anreta yon lè — yo jis pa t rete la.",
   n_behind: "Di nou ki klas oswa ki matyè. N ap ede w fè yon plan senp pou w ratrape.",
   r_talk: "Pafwa etap ki pi kouraje a se di: « Mwen jis bezwen pale. » Ou fenk fè l.",
-  n_talk: "Pataje non w ak telefòn ou si w kapab. Pastè a oswa yon moun nan ekip la ap kontakte w pou koute w — san jije w.",
-  sosReach: "Pataje telefòn ou sèlman pou ekip la ka jwenn ou. Yon moun ap kontakte w osito posib.",
+  n_talk: "Pataje non w ak telefòn ou pou nou ka jwenn ou. Pastè a oswa yon moun nan ekip la ap kontakte w pou koute w — san jije w.",
+  sosReach: "Nimewo telefòn ou obligatwa isit la — se sèl fason ekip la ka kontakte w. Yon moun ap kontakte w osito posib.",
   sosSend: "Voye — mwen bezwen èd",
   sosConfirmTitle: "Nou resevwa l. Pa lage.",
   sosConfirmBody: "Mesaj ou a nan men ekip swen Pastè a kounye a. Yon moun ap kontakte w. Antretan, kenbe sa nan kè w:",
@@ -362,10 +374,13 @@ pt: {
   carrying: "O que você está carregando?",
   carryingPh: "Escreva com suas palavras. Uma frase honesta é suficiente.",
   nameOpt: "Seu nome (opcional)",
-  phoneOpt: "Telefone (opcional)",
-  reachNote: "Compartilhe seu telefone só se quiser que o Pastor entre em contato. O Pastor lê cada pedido pessoalmente e responde em um dia útil.",
+  phoneOpt: "Telefone",
+  reachNote: "Sua oração é sempre gratuita — não precisa de número para orar. Mas se você quer que o Pastor responda, deixe seu telefone: ele só pode responder se você deixar. O Pastor lê cada pedido pessoalmente e responde em um dia útil.",
   prayBtn: "Ore comigo",
   needErr: "Escreva algumas palavras sobre o que você carrega, para podermos orar com você.",
+  phoneErr: "Adicione seu número de telefone — o Pastor só pode responder se você deixar um número onde ele possa te encontrar.",
+  sendNote: "Quer que o Pastor fale com você pessoalmente? Adicione seu telefone e toque em Enviar — ele só pode responder se você deixar um número. Sua oração acima é sua de qualquer forma.",
+  sendBtn: "Enviar ao Pastor",
   prayerFor: "Uma oração para você",
   hearVoice: "🔊 Ouça na voz do Pastor",
   voiceWait: "Carregando a voz do Pastor…",
@@ -392,8 +407,8 @@ pt: {
   r_behind: "Estar atrasado não é o mesmo que fracassar. A maioria dos que terminam já se sentiu atrasada — só não parou ali.",
   n_behind: "Conte qual é a aula ou matéria. Vamos ajudar você a montar um plano simples para recuperar.",
   r_talk: "Às vezes o passo mais corajoso é dizer: «Só preciso conversar.» Você acabou de dá-lo.",
-  n_talk: "Compartilhe seu nome e telefone se puder. O Pastor ou alguém da equipe vai procurar você para ouvir — sem julgar.",
-  sosReach: "Compartilhe seu telefone só para a equipe poder te procurar. Alguém entrará em contato assim que possível.",
+  n_talk: "Compartilhe seu nome e telefone para podermos te procurar. O Pastor ou alguém da equipe vai procurar você para ouvir — sem julgar.",
+  sosReach: "Seu número de telefone é obrigatório aqui — é a única maneira de a equipe responder a você. Alguém entrará em contato assim que possível.",
   sosSend: "Enviar — preciso de ajuda",
   sosConfirmTitle: "Recebemos. Não desista.",
   sosConfirmBody: "Sua mensagem já está com a equipe de cuidado do Pastor. Alguém vai te procurar. Enquanto isso, guarde isto no coração:",
@@ -444,10 +459,13 @@ ar: {
   carrying: "ما الذي تحمله في قلبك؟",
   carryingPh: "اكتبه بكلماتك. جملة واحدة صادقة تكفي.",
   nameOpt: "اسمك (اختياري)",
-  phoneOpt: "الهاتف (اختياري)",
-  reachNote: "شارك هاتفك فقط إذا أردت أن يتواصل معك الراعي. الراعي يقرأ كل طلب بنفسه ويرد شخصيًا خلال يوم عمل واحد.",
+  phoneOpt: "الهاتف",
+  reachNote: "صلاتك دائمًا مجانية — لا تحتاج إلى رقم لتصلّي. لكن إذا أردت أن يردّ عليك الراعي، اترك رقم هاتفك: لا يستطيع الرد إلا إذا تركته. الراعي يقرأ كل طلب بنفسه ويرد شخصيًا خلال يوم عمل واحد.",
   prayBtn: "صلِّ معي",
   needErr: "من فضلك اكتب بضع كلمات عما تحمله، حتى نصلّي معك.",
+  phoneErr: "من فضلك أضف رقم هاتفك — لا يستطيع الراعي الرد إلا إذا تركت رقمًا يمكنه الوصول إليك به.",
+  sendNote: "هل تريد أن يتواصل معك الراعي بنفسه؟ أضف رقم هاتفك واضغط إرسال — لا يستطيع الرد إلا إذا تركت رقمًا. صلاتك في الأعلى لك في كل الأحوال.",
+  sendBtn: "أرسل إلى الراعي",
   prayerFor: "صلاة من أجلك",
   hearVoice: "🔊 استمع إليها بصوت الراعي",
   voiceWait: "جارٍ تحميل صوت الراعي…",
@@ -474,8 +492,8 @@ ar: {
   r_behind: "التأخر ليس فشلًا. معظم من أكملوا شعروا بالتأخر في وقت ما — لكنهم لم يتوقفوا هناك.",
   n_behind: "أخبرنا بالمادة أو الحصة. سنساعدك على وضع خطة بسيطة للحاق بالركب.",
   r_talk: "أحيانًا تكون أشجع خطوة أن تقول: «أحتاج فقط أن أتحدث». وقد خطوتها للتو.",
-  n_talk: "شارك اسمك وهاتفك إن استطعت. سيتواصل معك الراعي أو أحد أعضاء الفريق للاستماع — دون حكم.",
-  sosReach: "شارك هاتفك فقط حتى يتمكن الفريق من الوصول إليك. سيتواصل معك أحدنا في أقرب وقت ممكن.",
+  n_talk: "شارك اسمك وهاتفك حتى نتمكن من الوصول إليك. سيتواصل معك الراعي أو أحد أعضاء الفريق للاستماع — دون حكم.",
+  sosReach: "رقم هاتفك مطلوب هنا — إنه الطريقة الوحيدة التي يستطيع بها الفريق الرد عليك. سيتواصل معك أحدنا في أقرب وقت ممكن.",
   sosSend: "أرسل — أحتاج إلى مساعدة",
   sosConfirmTitle: "وصلنا طلبك. لا تستسلم.",
   sosConfirmBody: "رسالتك الآن مع فريق رعاية الراعي. سيتواصل معك أحدنا. وحتى ذلك الحين، احفظ هذا في قلبك:",
@@ -852,6 +870,13 @@ async function playPastorVoice(btn) {
 }
 document.getElementById("voiceBtn").addEventListener("click", e => playPastorVoice(e.currentTarget));
 
+/* A request to Pastor or the care team only travels with a phone number on
+   it: without one, there is no way back to the person (the Nov 8 gap — a real
+   request arrived with no number and could not be answered). Prayer itself is
+   never gated: the prayer is composed and shown before any request is sent. */
+function validPhone(v) { return String(v || "").replace(/\D/g, "").length >= 10; }
+let pendingTalk = null;
+
 document.getElementById("talkForm").addEventListener("submit", e => {
   e.preventDefault();
   const rawNeed = document.getElementById("needInput").value.trim();
@@ -875,12 +900,42 @@ document.getElementById("talkForm").addEventListener("submit", e => {
 
   const item = { id: Date.now(), type: "counseling", barrier: null, need: rawNeed, name, phone,
            language: lang, staff: staffMode, crisis, done: false, ts: new Date().toISOString() };
-  deliver(item);
+  /* Crisis requests always travel immediately, number or not — the crisis
+     panel has already promised this person that their request was saved and
+     Pastor will follow up, and Pastor must see it. Every other request
+     travels only with a reachable phone number; until then the prayer above
+     is theirs and the send block below it asks for the number. */
+  if (crisis || validPhone(phone)) {
+    deliver(item);
+    bump("counsel");
+    if (staffMode) bump("staff");
+    if (crisis) bump("crisis");
+    pendingTalk = null;
+    document.getElementById("sendBlock").hidden = true;
+    document.getElementById("savedNote").hidden = false;
+  } else {
+    pendingTalk = item;
+    document.getElementById("resultPhone").value = phone;
+    document.getElementById("resultPhoneErr").hidden = true;
+    document.getElementById("savedNote").hidden = true;
+    document.getElementById("sendBlock").hidden = false;
+  }
+  document.getElementById("prayerResult").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+document.getElementById("sendReqBtn").addEventListener("click", () => {
+  if (!pendingTalk) return;
+  const v = document.getElementById("resultPhone").value.replace(/\s+/g, " ").trim().slice(0, 30);
+  const perr = document.getElementById("resultPhoneErr");
+  if (!validPhone(v)) { perr.hidden = false; document.getElementById("resultPhone").focus(); return; }
+  perr.hidden = true;
+  pendingTalk.phone = v;
+  deliver(pendingTalk);
   bump("counsel");
   if (staffMode) bump("staff");
-  if (crisis) bump("crisis");
+  pendingTalk = null;
+  document.getElementById("sendBlock").hidden = true;
   document.getElementById("savedNote").hidden = false;
-  document.getElementById("prayerResult").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 /* ---------------- Don't Quit (SOS) ---------------- */
@@ -899,7 +954,11 @@ document.getElementById("sosForm").addEventListener("submit", e => {
   e.preventDefault();
   if (!selectedBarrier) return;
   const name = document.getElementById("sosName").value.replace(/\s+/g, " ").trim().slice(0, 40);
-  const phone = document.getElementById("sosPhone").value.replace(/\s+/g, " ").trim().slice(0, 30);
+  const phoneRaw = document.getElementById("sosPhone").value;
+  const perr = document.getElementById("sosPhoneErr");
+  if (!validPhone(phoneRaw)) { perr.hidden = false; document.getElementById("sosPhone").focus(); return; }
+  perr.hidden = true;
+  const phone = phoneRaw.replace(/\s+/g, " ").trim().slice(0, 30);
   const item = { id: Date.now(), type: "sos", barrier: selectedBarrier, need: "", name, phone,
            language: lang, staff: staffMode, crisis: false, done: false, ts: new Date().toISOString() };
   deliver(item);
