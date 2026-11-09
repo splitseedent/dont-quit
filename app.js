@@ -30,6 +30,18 @@ en: {
   serviceLine: "Touch My Soul Ministry · Sundays 11:30 AM · Whisper Theater, Garnet Waterfront Hotel",
   crisisFooter: "In crisis? Call or text 988 — free, day or night (US).",
   careLink: "Care Team",
+  privacyLink: "Your privacy",
+  privacyTitle: "Your privacy",
+  privacyH1: "What we collect",
+  privacyP1: "Only what you type when you ask for help: your name if you give it, your phone number, and your message. Browsing the prayer and the daily word collects nothing about you.",
+  privacyH2: "Who sees it",
+  privacyP2: "Pastor and his care team at Touch My Soul Ministry — no one else. The inbox can only be opened with the ministry's own login. Your school receives counts only — how many requests of each kind — never your name, your number, or your words.",
+  privacyH3: "What we never do",
+  privacyP3: "We never sell your information or share it with advertisers. The alert that buzzes Pastor's phone carries no name, no number, and none of your words — only the kind of request. What you share does not affect your classes, your grades, or your standing at school.",
+  privacyH4: "How long we keep it",
+  privacyP4: "Until your request is answered and followed up. After that it is cleared from the active inbox. To have a request removed sooner, text Pastor at 317-956-4120 and ask.",
+  privacyH5: "How we count visits",
+  privacyP5: "We count anonymous visits so we can report how many people the app is reaching — counts of visits and taps only. We never store who visited, where you are, or what you read or wrote.",
   back: "← Back",
   carrying: "What are you carrying?",
   carryingPh: "Write it in your own words. One honest line is enough.",
@@ -115,6 +127,18 @@ es: {
   serviceLine: "Touch My Soul Ministry · Domingos 11:30 AM · Whisper Theater, Garnet Waterfront Hotel",
   crisisFooter: "¿En crisis? Llama o envía un mensaje al 988 — gratis, día y noche (EE. UU.).",
   careLink: "Equipo de cuidado",
+  privacyLink: "Tu privacidad",
+  privacyTitle: "Tu privacidad",
+  privacyH1: "Qué recopilamos",
+  privacyP1: "Solo lo que escribes cuando pides ayuda: tu nombre si lo das, tu número de teléfono y tu mensaje. Leer la oración y la palabra del día no recopila nada sobre ti.",
+  privacyH2: "Quién lo ve",
+  privacyP2: "El Pastor y su equipo de cuidado en Touch My Soul Ministry — nadie más. La bandeja solo se puede abrir con la cuenta del ministerio. Tu escuela recibe solo cantidades — cuántas solicitudes de cada tipo — nunca tu nombre, tu número ni tus palabras.",
+  privacyH3: "Lo que nunca hacemos",
+  privacyP3: "Nunca vendemos tu información ni la compartimos con anunciantes. La alerta que suena en el teléfono del Pastor no lleva nombre, ni número, ni ninguna de tus palabras — solo el tipo de solicitud. Lo que compartes no afecta tus clases, tus notas ni tu situación en la escuela.",
+  privacyH4: "Cuánto tiempo lo guardamos",
+  privacyP4: "Hasta que tu solicitud sea respondida y se le dé seguimiento. Después se retira de la bandeja activa. Para pedir que se elimine antes, escribe al Pastor al 317-956-4120.",
+  privacyH5: "Cómo contamos las visitas",
+  privacyP5: "Contamos visitas anónimas para poder informar a cuántas personas llega la aplicación — solo cantidades de visitas y toques. Nunca guardamos quién visitó, dónde estás, ni lo que leíste o escribiste.",
   back: "← Atrás",
   carrying: "¿Qué llevas en el corazón?",
   carryingPh: "Escríbelo con tus palabras. Una línea sincera es suficiente.",
@@ -200,6 +224,18 @@ fr: {
   serviceLine: "Touch My Soul Ministry · Dimanches 11h30 · Whisper Theater, Garnet Waterfront Hotel",
   crisisFooter: "En crise ? Appelez ou écrivez au 988 — gratuit, jour et nuit (É.-U.).",
   careLink: "Équipe d'accompagnement",
+  privacyLink: "Votre vie privée",
+  privacyTitle: "Votre vie privée",
+  privacyH1: "Ce que nous recueillons",
+  privacyP1: "Uniquement ce que vous écrivez quand vous demandez de l'aide : votre nom si vous le donnez, votre numéro de téléphone et votre message. Lire la prière et la parole du jour ne recueille rien sur vous.",
+  privacyH2: "Qui le voit",
+  privacyP2: "Le Pasteur et son équipe de soins à Touch My Soul Ministry — personne d'autre. La boîte de réception ne s'ouvre qu'avec le compte du ministère. Votre école reçoit seulement des chiffres — combien de demandes de chaque type — jamais votre nom, votre numéro ni vos paroles.",
+  privacyH3: "Ce que nous ne faisons jamais",
+  privacyP3: "Nous ne vendons jamais vos informations et ne les partageons jamais avec des annonceurs. L'alerte qui fait vibrer le téléphone du Pasteur ne contient ni nom, ni numéro, ni aucune de vos paroles — seulement le type de demande. Ce que vous partagez n'affecte ni vos cours, ni vos notes, ni votre situation à l'école.",
+  privacyH4: "Combien de temps nous le gardons",
+  privacyP4: "Jusqu'à ce que votre demande soit traitée et suivie. Ensuite, elle est retirée de la boîte active. Pour la faire retirer plus tôt, écrivez au Pasteur au 317-956-4120.",
+  privacyH5: "Comment nous comptons les visites",
+  privacyP5: "Nous comptons les visites de façon anonyme pour pouvoir dire combien de personnes l'application atteint — seulement des nombres de visites et de touchers. Nous ne gardons jamais qui a visité, où vous êtes, ni ce que vous avez lu ou écrit.",
   back: "← Retour",
   carrying: "Qu'est-ce que vous portez ?",
   carryingPh: "Écrivez-le avec vos mots. Une phrase honnête suffit.",
@@ -285,6 +321,18 @@ ht: {
   serviceLine: "Touch My Soul Ministry · Dimanch 11:30 AM · Whisper Theater, Garnet Waterfront Hotel",
   crisisFooter: "Nan kriz? Rele oswa ekri 988 — gratis, lajounen kou lannuit (Etazini).",
   careLink: "Ekip swen",
+  privacyLink: "Vi prive w",
+  privacyTitle: "Vi prive w",
+  privacyH1: "Sa nou kolekte",
+  privacyP1: "Se sèlman sa w ekri lè w mande èd: non w si w bay li, nimewo telefòn ou, ak mesaj ou. Lekti lapriyè a ak pawòl pou jodi a pa kolekte anyen sou ou.",
+  privacyH2: "Ki moun ki wè li",
+  privacyP2: "Pastè a ak ekip swen li nan Touch My Soul Ministry — pèsonn lòt. Bwat resepsyon an louvri sèlman ak kont ministè a. Lekòl ou resevwa sèlman kantite — konbyen demann nan chak kalite — janm non w, nimewo w, ni pawòl ou.",
+  privacyH3: "Sa nou pa janm fè",
+  privacyP3: "Nou pa janm vann enfòmasyon w ni pataje li ak piblisite. Alèt ki fè telefòn Pastè a vibre pa pote non, ni nimewo, ni okenn nan pawòl ou yo — sèlman kalite demann nan. Sa w pataje pa afekte klas ou, nòt ou, ni pozisyon w nan lekòl la.",
+  privacyH4: "Konbyen tan nou kenbe li",
+  privacyP4: "Jiskaske yo reponn demann ou epi yo fè swivi. Apre sa, yo retire li nan bwat aktif la. Pou w mande yo retire li pi bonè, voye yon tèks bay Pastè a nan 317-956-4120.",
+  privacyH5: "Kijan nou konte vizit yo",
+  privacyP5: "Nou konte vizit yo san non pou nou ka di konbyen moun aplikasyon an rive jwenn — sèlman kantite vizit ak tape. Nou pa janm sere ki moun ki vizite, kote w ye, ni sa w li oswa w ekri.",
   back: "← Retounen",
   carrying: "Kisa w ap pote?",
   carryingPh: "Ekri l ak pwòp mo w. Yon sèl fraz onèt sifi.",
@@ -370,6 +418,18 @@ pt: {
   serviceLine: "Touch My Soul Ministry · Domingos 11:30 · Whisper Theater, Garnet Waterfront Hotel",
   crisisFooter: "Em crise? Ligue ou envie mensagem para 988 — grátis, dia e noite (EUA).",
   careLink: "Equipe de cuidado",
+  privacyLink: "Sua privacidade",
+  privacyTitle: "Sua privacidade",
+  privacyH1: "O que coletamos",
+  privacyP1: "Somente o que você digita quando pede ajuda: seu nome, se você o der, seu número de telefone e sua mensagem. Ler a oração e a palavra do dia não coleta nada sobre você.",
+  privacyH2: "Quem vê",
+  privacyP2: "O Pastor e sua equipe de cuidado na Touch My Soul Ministry — mais ninguém. A caixa de entrada só pode ser aberta com a conta do ministério. Sua escola recebe apenas números — quantos pedidos de cada tipo — nunca seu nome, seu número ou suas palavras.",
+  privacyH3: "O que nunca fazemos",
+  privacyP3: "Nunca vendemos suas informações nem as compartilhamos com anunciantes. O alerta que toca no telefone do Pastor não leva nome, número nem nenhuma das suas palavras — apenas o tipo de pedido. O que você compartilha não afeta suas aulas, suas notas nem sua situação na escola.",
+  privacyH4: "Por quanto tempo guardamos",
+  privacyP4: "Até que seu pedido seja respondido e acompanhado. Depois, ele é retirado da caixa ativa. Para pedir a remoção antes, envie uma mensagem ao Pastor no 317-956-4120.",
+  privacyH5: "Como contamos as visitas",
+  privacyP5: "Contamos visitas anônimas para podermos dizer quantas pessoas o aplicativo está alcançando — apenas números de visitas e toques. Nunca guardamos quem visitou, onde você está, nem o que você leu ou escreveu.",
   back: "← Voltar",
   carrying: "O que você está carregando?",
   carryingPh: "Escreva com suas palavras. Uma frase honesta é suficiente.",
@@ -455,6 +515,18 @@ ar: {
   serviceLine: "Touch My Soul Ministry · الأحد 11:30 صباحًا · Whisper Theater، فندق Garnet Waterfront",
   crisisFooter: "في أزمة؟ اتصل أو أرسل رسالة إلى 988 — مجانًا، ليلًا ونهارًا (أمريكا).",
   careLink: "فريق الرعاية",
+  privacyLink: "خصوصيتك",
+  privacyTitle: "خصوصيتك",
+  privacyH1: "ما الذي نجمعه",
+  privacyP1: "فقط ما تكتبه عندما تطلب المساعدة: اسمك إن قدمته، ورقم هاتفك، ورسالتك. تصفح الصلاة وكلمة اليوم لا يجمع أي شيء عنك.",
+  privacyH2: "من يراه",
+  privacyP2: "القس وفريق الرعاية التابع له في Touch My Soul Ministry — ولا أحد غيرهم. لا يمكن فتح صندوق الوارد إلا بحساب الكنيسة. تتلقى مدرستك أعدادًا فقط — كم طلبًا من كل نوع — ولا تتلقى أبدًا اسمك أو رقمك أو كلماتك.",
+  privacyH3: "ما لا نفعله أبدًا",
+  privacyP3: "لا نبيع معلوماتك أبدًا ولا نشاركها مع المعلنين. التنبيه الذي يرن على هاتف القس لا يحمل اسمًا ولا رقمًا ولا أيًا من كلماتك — فقط نوع الطلب. ما تشاركه لا يؤثر على دروسك أو درجاتك أو وضعك في المدرسة.",
+  privacyH4: "كم من الوقت نحتفظ به",
+  privacyP4: "حتى يتم الرد على طلبك ومتابعته. بعد ذلك تتم إزالته من صندوق الوارد النشط. لطلب إزالته في وقت أقرب، راسل القس على الرقم 317-956-4120.",
+  privacyH5: "كيف نعد الزيارات",
+  privacyP5: "نعد الزيارات دون أسماء حتى نتمكن من الإبلاغ عن عدد الأشخاص الذين يصلهم التطبيق — أعداد الزيارات والنقرات فقط. لا نخزن أبدًا من زار، أو أين أنت، أو ما قرأته أو كتبته.",
   back: "رجوع",
   carrying: "ما الذي تحمله في قلبك؟",
   carryingPh: "اكتبه بكلماتك. جملة واحدة صادقة تكفي.",
@@ -756,8 +828,25 @@ function bump(key) { const c = loadCounters(); c[key] = (c[key] || 0) + 1; local
 function saveCounters(c) { localStorage.setItem(LS.counters, JSON.stringify(c)); }
 function t(key) { return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key; }
 
+/* Anonymous visit counting (counts only): app + event name + page path +
+   referrer HOST. Never names, numbers, typed words, locations, or content.
+   The server stores no raw addresses — only a daily one-way visitor code. */
+const DQ_TRACK_URL = "https://bibleai.praykin.com/api/track";
+function dqTrack(event) {
+  try {
+    const payload = JSON.stringify({ app: "dontquit", event: event,
+      path: window.location.pathname, ref: document.referrer || "" });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(DQ_TRACK_URL, new Blob([payload], { type: "application/json" }));
+    } else {
+      fetch(DQ_TRACK_URL, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: payload, keepalive: true }).catch(() => {});
+    }
+  } catch (e) { /* counting must never break the app */ }
+}
+
 /* ---------------- Screens & language ---------------- */
-const SCREENS = ["lang", "home", "talk", "sos", "care"];
+const SCREENS = ["lang", "home", "talk", "sos", "care", "privacy"];
 function show(id) {
   SCREENS.forEach(s => { document.getElementById("screen-" + s).hidden = s !== id; });
   window.scrollTo({ top: 0 });
@@ -892,6 +981,7 @@ document.getElementById("talkForm").addEventListener("submit", e => {
 
   currentPrayer = composePrayer(name, rawNeed);
   bump("prayers");
+  dqTrack("prayer_shown");
   document.getElementById("prayerText").textContent = currentPrayer.prayer;
   document.getElementById("prayerVerse").textContent = "“" + currentPrayer.verse.text + "”";
   document.getElementById("prayerRef").textContent = currentPrayer.verse.ref;
@@ -908,6 +998,7 @@ document.getElementById("talkForm").addEventListener("submit", e => {
   if (crisis || validPhone(phone)) {
     deliver(item);
     bump("counsel");
+    dqTrack("counseling_sent");
     if (staffMode) bump("staff");
     if (crisis) bump("crisis");
     pendingTalk = null;
@@ -932,6 +1023,7 @@ document.getElementById("sendReqBtn").addEventListener("click", () => {
   pendingTalk.phone = v;
   deliver(pendingTalk);
   bump("counsel");
+  dqTrack("counseling_sent");
   if (staffMode) bump("staff");
   pendingTalk = null;
   document.getElementById("sendBlock").hidden = true;
@@ -963,6 +1055,7 @@ document.getElementById("sosForm").addEventListener("submit", e => {
            language: lang, staff: staffMode, crisis: false, done: false, ts: new Date().toISOString() };
   deliver(item);
   bump("sos");
+  dqTrack("sos_sent");
   if (staffMode) bump("staff");
   const v = dailyVerse();
   document.getElementById("sosVerse").textContent = "“" + v.t + "”";
@@ -1158,7 +1251,10 @@ document.getElementById("exportBtn").addEventListener("click", () => {
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 });
 
+document.getElementById("privacyLink").addEventListener("click", () => show("privacy"));
+
 /* ---------------- Boot ---------------- */
 captureSessionFromHash();
+dqTrack("pageview");
 if (lang && I18N[lang]) { applyLang(); show("home"); }
 else { lang = "en"; show("lang"); }
