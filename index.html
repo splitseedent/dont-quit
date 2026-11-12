@@ -67,6 +67,19 @@
       </blockquote>
     </div>
 
+    <div class="grow card">
+      <h2 data-i18n="growTitle">Grow</h2>
+      <p class="fine" data-i18n="growSub">Tools for your next step: a job, an interview, a diploma.</p>
+      <div class="grow-grid">
+        <button type="button" class="grow-chip" id="doorResume"><span class="g-icon" aria-hidden="true">📄</span><span data-i18n="doorResume">Build My Resume</span></button>
+        <button type="button" class="grow-chip" id="doorInterview"><span class="g-icon" aria-hidden="true">🎤</span><span data-i18n="doorInterview">Interview Prep</span></button>
+        <button type="button" class="grow-chip" id="doorDec1"><span class="g-icon" aria-hidden="true">📅</span><span data-i18n="doorDec1">December 1 Guide</span></button>
+        <button type="button" class="grow-chip" id="doorSteps"><span class="g-icon" aria-hidden="true">🪜</span><span data-i18n="doorSteps">My Next Steps</span></button>
+        <button type="button" class="grow-chip" id="doorHelp"><span class="g-icon" aria-hidden="true">🧭</span><span data-i18n="doorHelp">Help Near You</span></button>
+        <button type="button" class="grow-chip" id="doorStudy"><span class="g-icon" aria-hidden="true">📖</span><span data-i18n="doorStudy">Study Buddy</span></button>
+      </div>
+    </div>
+
     <button type="button" class="staff-link" id="staffToggle"><span data-i18n="forStaff">For staff</span></button>
 
     <footer class="site-footer">
@@ -199,10 +212,211 @@
       <div id="queueList"></div>
       <p id="queueEmpty" class="fine" hidden><span data-i18n="queueEmpty">No requests yet on this device.</span></p>
       <button type="button" class="ghost-btn" id="exportBtn"><span data-i18n="exportBtn">Export queue (JSON)</span></button>
+      <div id="wayneReportBox" class="presentation-tools" hidden>
+        <h2 data-i18n="reportTitle">Wayne Report</h2>
+        <p class="fine" data-i18n="reportNote">A counts only summary for the Wayne team. No names, no numbers, no message text.</p>
+        <button type="button" class="ghost-btn" id="reportBtn"><span data-i18n="reportBtn">Build the Wayne Report</span></button>
+        <textarea id="reportText" rows="9" readonly hidden></textarea>
+        <button type="button" class="ghost-btn" id="reportCopyBtn" hidden><span data-i18n="reportCopy">Copy report</span></button>
+        <p id="reportCopiedNote" class="fine" hidden><span data-i18n="reportCopied">Report copied.</span></p>
+      </div>
       <div class="tool-actions" id="liveActions" hidden>
         <button type="button" class="ghost-btn" id="refreshBtn"><span data-i18n="careRefresh">Refresh</span></button>
         <button type="button" class="ghost-btn danger" id="logoutBtn"><span data-i18n="careLogout">Sign out</span></button>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ BUILD MY RESUME ============ -->
+  <section id="screen-resume" class="screen" hidden>
+    <div class="no-print">
+      <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+      <h1 class="screen-title" data-i18n="doorResume">Build My Resume</h1>
+      <p class="screen-sub" data-i18n="resIntro">Answer a few questions. The app builds a clean, professional resume from your own words. It only uses what you type. It never makes anything up.</p>
+      <p class="fine" data-i18n="resPrivacy">Your resume stays on your phone unless you send it to Pastor. It never goes to the school.</p>
+    </div>
+
+    <form id="resumeForm" class="no-print" novalidate>
+      <div class="card">
+        <h2 data-i18n="resAboutYou">About you</h2>
+        <label class="field-label" for="resName"><span data-i18n="resName">Full name</span></label>
+        <input type="text" id="resName" autocomplete="name" />
+        <label class="field-label" for="resPhone"><span data-i18n="phoneOpt">Phone</span></label>
+        <input type="tel" id="resPhone" autocomplete="tel" />
+        <label class="field-label" for="resCity"><span data-i18n="resCity">City</span></label>
+        <input type="text" id="resCity" autocomplete="address-level2" />
+        <label class="field-label" for="resEmail"><span data-i18n="resEmail">Email (optional)</span></label>
+        <input type="text" id="resEmail" autocomplete="email" />
+        <label class="field-label" for="resTarget"><span data-i18n="resTarget">Job or training you want</span></label>
+        <select id="resTarget" class="select-input"></select>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="resSummaryH">Your story in short</h2>
+        <p class="fine" data-i18n="resSummaryHelp">Answer any of these three. The app turns your answers into a short summary.</p>
+        <label class="field-label" for="resSum1"><span data-i18n="resSum1">What kind of work do you want?</span></label>
+        <input type="text" id="resSum1" />
+        <label class="field-label" for="resSum2"><span data-i18n="resSum2">What are you good at?</span></label>
+        <input type="text" id="resSum2" />
+        <label class="field-label" for="resSum3"><span data-i18n="resSum3">What should an employer know about you?</span></label>
+        <input type="text" id="resSum3" />
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="resJobsH">Work history</h2>
+        <p class="fine" data-i18n="resJobsHelp">Add up to three jobs. Leave a job blank if you do not need it.</p>
+        <div id="resJobs"></div>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="resVolH">Volunteer and community work</h2>
+        <label class="field-label" for="resVol"><span data-i18n="resVol">Church, school, family care, and community work count as real experience. Tell us what you did.</span></label>
+        <textarea id="resVol" rows="3"></textarea>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="resSkillsH">Skills</h2>
+        <p class="fine" data-i18n="resSkillsHelp">Tap the skills you have. You can add your own below.</p>
+        <div id="resSkillChips" class="chip-wrap"></div>
+        <label class="field-label" for="resSkillsFree"><span data-i18n="resSkillsFree">Your skills, separated by commas</span></label>
+        <input type="text" id="resSkillsFree" />
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="resEduH">Education and more</h2>
+        <label class="field-label" for="resSchool"><span data-i18n="resSchool">School name</span></label>
+        <input type="text" id="resSchool" />
+        <label class="field-label" for="resDiploma"><span data-i18n="resDiploma">Diploma or HSE status</span></label>
+        <select id="resDiploma" class="select-input">
+          <option value="" data-i18n="resDipNone">Choose one</option>
+          <option value="dip_done" data-i18n="resDipDone">Diploma or HSE earned</option>
+          <option value="dip_working" data-i18n="resDipWorking">Working on my HSE now</option>
+          <option value="dip_some" data-i18n="resDipSome">Some high school</option>
+          <option value="dip_college" data-i18n="resDipCollege">Some college or a degree</option>
+        </select>
+        <label class="field-label" for="resCerts"><span data-i18n="resCerts">Certifications, separated by commas</span></label>
+        <input type="text" id="resCerts" />
+        <label class="field-label" for="resLangs"><span data-i18n="resLangs">Languages you speak, separated by commas</span></label>
+        <input type="text" id="resLangs" />
+      </div>
+
+      <p id="resErr" class="form-err" hidden><span data-i18n="resErr">Please add at least your name so the resume has a name on it.</span></p>
+      <button type="submit" class="primary-btn"><span data-i18n="resBuild">Build my resume</span></button>
+    </form>
+
+    <div id="resumeResult" hidden>
+      <div id="resumeDoc" class="resume-doc"></div>
+      <div class="no-print">
+        <button type="button" class="primary-btn" id="resPrintBtn"><span data-i18n="resPrint">Print or save as PDF</span></button>
+        <button type="button" class="ghost-btn" id="resCopyBtn"><span data-i18n="resCopy">Copy text</span></button>
+        <p id="resCopyNote" class="fine" hidden><span data-i18n="resCopied">Resume text copied.</span></p>
+        <button type="button" class="ghost-btn" id="resSendBtn"><span data-i18n="resSend">Send to Pastor for review</span></button>
+        <p id="resSendErr" class="form-err" hidden><span data-i18n="resSendErr">To send your resume to Pastor, the form needs your name and a phone number he can reach, ten digits or more.</span></p>
+        <p id="resSentNote" class="saved-note" hidden><span data-i18n="resSent">Your resume is on its way to Pastor. He will reach out to you himself.</span></p>
+        <button type="button" class="ghost-btn" id="resEditBtn"><span data-i18n="resEdit">Keep editing</span></button>
+        <button type="button" class="ghost-btn danger" id="resClearBtn"><span data-i18n="resClear">Clear my resume data</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERVIEW PREP ============ -->
+  <section id="screen-interview" class="screen" hidden>
+    <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+    <h1 class="screen-title" data-i18n="intTitle">Walk In Ready</h1>
+    <p class="screen-sub" data-i18n="intIntro">Practice real interview questions before the big day. Pick your training, read each question, and write what you would say. Your answers stay on this phone.</p>
+    <p id="intLangNote" class="fine" hidden><span data-i18n="intEnNote">For now, the questions and coaching are in English and Spanish. The rest of the app speaks your language.</span></p>
+    <label class="field-label" for="intTrack"><span data-i18n="intPick">Pick your training</span></label>
+    <select id="intTrack" class="select-input"></select>
+    <div id="intDeck"></div>
+    <p id="intProgress" class="fine"></p>
+    <p id="intErr" class="form-err" hidden><span data-i18n="intErr">Write a short answer for every question first. Even one honest line counts.</span></p>
+    <button type="button" class="primary-btn" id="intFinishBtn"><span data-i18n="intFinish">Finish practice</span></button>
+    <div id="intDone" class="card confirm-card" hidden>
+      <h2 data-i18n="intDoneTitle">You did the work. Now walk in ready.</h2>
+      <p data-i18n="intDoneBody">You practiced every question. Read your answers once more before the interview, and bring your resume with you.</p>
+    </div>
+  </section>
+
+  <!-- ============ DECEMBER 1 GUIDE ============ -->
+  <section id="screen-dec1" class="screen" hidden>
+    <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+    <h1 class="screen-title" data-i18n="decTitle">Career Training: Apply by December 1</h1>
+    <div class="card countdown-card">
+      <p id="decCountdown" class="countdown-num"></p>
+      <p id="decClosed" class="screen-sub" hidden><span data-i18n="decClosed">Applications for Spring 2027 have closed. Ask Pastor about the next round.</span></p>
+      <p class="fine" data-i18n="decFacts">Career Training is for ages 18 and older. Classes start February 1, 2027.</p>
+    </div>
+    <div class="card">
+      <h2 data-i18n="decReadyH">Have these ready</h2>
+      <ul class="check-list">
+        <li data-i18n="decItem1">Your diploma or HSE, or start the free HSE classes now</li>
+        <li data-i18n="decItem2">An Indiana ID</li>
+        <li data-i18n="decItem3">Your Social Security card</li>
+        <li data-i18n="decItem4">Your work authorization</li>
+        <li data-i18n="decItem5">A phone number and an email Wayne can reach</li>
+      </ul>
+      <a class="primary-btn link-btn" href="https://adulted.info/career" target="_blank" rel="noopener"><span data-i18n="decApplyBtn">Apply at adulted.info/career</span></a>
+    </div>
+    <form id="decForm" class="card" novalidate>
+      <h2 data-i18n="decTellH">Already applied?</h2>
+      <p class="fine" data-i18n="decTellBody">Tell Pastor. He sends each applicant's name to Wayne for their interview, so your name reaches the right desk.</p>
+      <label class="field-label" for="decName"><span data-i18n="resName">Full name</span></label>
+      <input type="text" id="decName" autocomplete="name" />
+      <label class="field-label" for="decPhone"><span data-i18n="phoneOpt">Phone</span></label>
+      <input type="tel" id="decPhone" autocomplete="tel" />
+      <label class="field-label" for="decTrack"><span data-i18n="intPick">Pick your training</span></label>
+      <select id="decTrack" class="select-input"></select>
+      <p id="decErr" class="form-err" hidden><span data-i18n="decErr">Please add your name and a phone number Pastor can reach, ten digits or more.</span></p>
+      <button type="submit" class="primary-btn"><span data-i18n="decTellBtn">I applied, tell Pastor</span></button>
+      <p id="decSent" class="saved-note" hidden><span data-i18n="decSent">Got it. Pastor has your name and will send it to Wayne for your interview.</span></p>
+    </form>
+  </section>
+
+  <!-- ============ MY NEXT STEPS ============ -->
+  <section id="screen-steps" class="screen" hidden>
+    <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+    <h1 class="screen-title" data-i18n="stepsTitle">My Next Steps</h1>
+    <p class="screen-sub" data-i18n="stepsIntro">Your ladder, one step at a time. Check off each step as you finish it.</p>
+    <p class="fine" data-i18n="stepsPrivacy">This list lives only on your phone. Nothing leaves this device.</p>
+    <div class="card">
+      <div class="progress-track"><div id="stepsBar" class="progress-fill"></div></div>
+      <p id="stepsCount" class="fine"></p>
+      <div id="stepsList"></div>
+      <p id="stepsCheer" class="sos-next"></p>
+    </div>
+  </section>
+
+  <!-- ============ HELP NEAR YOU ============ -->
+  <section id="screen-help" class="screen" hidden>
+    <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+    <h1 class="screen-title" data-i18n="helpTitle">Help Near You</h1>
+    <p class="screen-sub" data-i18n="helpIntro">Real doors, close to home. Call first when you can, so you know what to bring.</p>
+    <div id="helpList"></div>
+    <p class="fine" data-i18n="helpMore">More doors from Wayne's own resource list will be added here when the team shares it.</p>
+  </section>
+
+  <!-- ============ STUDY BUDDY ============ -->
+  <section id="screen-study" class="screen" hidden>
+    <button type="button" class="back-btn" data-back><span data-i18n="back">← Back</span></button>
+    <h1 class="screen-title" data-i18n="studyTitle">Study Buddy</h1>
+    <p class="screen-sub" data-i18n="studyIntro">A short practice set for today. Eight questions, no grades, no pressure. New questions every day.</p>
+    <div id="studySet"></div>
+    <p id="studyScore" class="sos-next" hidden></p>
+    <div class="card">
+      <h2 data-i18n="studyVocabH">Words for your trade</h2>
+      <p class="fine" data-i18n="studyVocabHelp">Pick your training, then tap the card to see what the word means.</p>
+      <label class="field-label" for="studyTrack"><span data-i18n="intPick">Pick your training</span></label>
+      <select id="studyTrack" class="select-input"></select>
+      <button type="button" class="flash-card" id="flashCard">
+        <span id="flashWord" class="flash-word"></span>
+        <span id="flashDef" class="flash-def" hidden></span>
+        <span class="fine" data-i18n="studyTap">Tap to flip</span>
+      </button>
+      <div class="flash-nav">
+        <button type="button" class="ghost-btn" id="flashPrev"><span data-i18n="studyPrev">Back</span></button>
+        <button type="button" class="ghost-btn" id="flashNext"><span data-i18n="studyNext">Next word</span></button>
+      </div>
+      <p id="flashCount" class="fine"></p>
     </div>
   </section>
 
